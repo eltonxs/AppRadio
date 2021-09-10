@@ -26,7 +26,9 @@ class PlayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadMusic("http://strm112.1.fm/acountry_mobile_mp3")
+        //loadMusic("http://strm112.1.fm/acountry_mobile_mp3")
+        loadMusic("https://r15.ciclano.io:14385/stream")
+        
     }
     
     func loadMusic(_ stringUrl: String) {
@@ -55,7 +57,8 @@ class PlayViewController: UIViewController {
     }
     
     func stop() {
-        player?.pause()
+   
+        //player?.pause()
         player?.seek(to: CMTime.zero)
     }
 
